@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "CV Chatbot"
+version = "0.0.1"
+description = "Receive a resume and chat with it."
+authors = ["Anthony Sun <auslei@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+unstructured = '==0.10.25'
+ollama = "^0.3.2"
+tqdm = "^4.66.5"
+streamlit = "^1.38.0"
+pypdf2 = "^3.0.1"
+langchain = "^0.3.7"
+chromadb = "^0.5.5"
+pymupdf4llm = "^0.0.17"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[tool.pyright] # check python code for type errors
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

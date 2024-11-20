@@ -1,0 +1,46 @@
+# Byte-compiled / intermediate files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+.venv/
+llama3/
+py3_11/
+
+# macOS files
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.lock
+*.swp
+*.swo
+
+# Python-specific
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+
+# IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# Temporary and test files
+tmp.pdf
+*.jpg  # Exclude test images unless needed in the repo
+
+# Poetry-related
+poetry.lock
+
+# Git-related
+.git/
+
+# Ignore files you may want to exclude
+Attention Is All You Need.pdf
