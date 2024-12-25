@@ -44,3 +44,7 @@ poetry.lock
 
 # Ignore files you may want to exclude
 Attention Is All You Need.pdf
+
+._*
+*.sqlite3
+*.bin
